@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Roboto&display=swap" rel="stylesheet">
+    <title>Your GYM</title>
+    
+</head>
+<body>
+    
+<header class="header">
+<nov class="nov-teg">
+    <div class="nav-bar-wrapper">
+        <div class="nav-logo-wrapper">
+<i class="nav-logo"></i>
+<span class="nav-title">Your GYM</span>
+        </div>
+        <div class="nav-menu-item">
+<span class="nav-item">Про нас</span>
+<span class="nav-item">Новини</span>
+<span class="nav-item">Блог</span>
+<div class=" mobil-menu"></div>
+        </div>
+    </div>
+</nov>
+</header>
+
+<div class="page-wrapper">
+    <section class="registration-page">
+        <div class="registration-form-wrapper">
+
+<div class="form-card flex-column">
+<div class="form-wrapper">
+<h2 class="form-title">Електронна черга  у спорт зал</h2>
+
+<form class="registration-form flex-column"action="submit">
+    <label class="form-label" for="name">Ім’я</label>
+    <input class="form-input" type="text" id="name" name="name" placeholder="Введіть імʼя" required>
+
+    <label class="form-label" for="phone" required>Телефон</label>
+    <input class="form-input" type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" placeholder="+38 (_) __ __ __" required>
+    <label class="form-label">Тренер</label>                                    
+
+    <select name="select" id="select" class="form-input" required>
+        <option value="Billy">Біллі</option>
+        <option value="Bred">Бред</option>
+        <option value="Van">Ван</option>
+        <option value="Mark">Марк</option>
+        <option value="Maksym">Максим</option>
+        <option value="Bogdan">Богдан</option>
+    </select>
+    <button class="form-submit-button" type="submit">Зареєструватися</button>
+</form>
+</div>
+</div>
+</div> 
+</section>
+</div>
+<footer class="footer secondary-text">
+    <span class="footer-credentials">
+        ©2022 Your GYM. Всі права захищені.
+    </span>
+</footer>
+</body>
+</html>

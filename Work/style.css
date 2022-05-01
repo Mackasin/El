@@ -1,0 +1,260 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+}
+html,
+body{
+    height: 100%;
+}
+:root{
+    --main-color:#FFFFFF;
+    --secondary-color:#000000;
+    --botton-dimmed:#615F5F;
+    --botton-active:#000000;
+    --border-color: rgba(190, 185, 185, 1);
+
+}
+
+body{
+    font-family: Roboto;
+    background-image: url('./Assets/fon.jpg');
+    background-position: center;
+    background-size: cover;
+    min-width: 340px; 
+}
+
+.page-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+}
+.header,.page-wrapper{
+max-width: 1440px;
+margin:0 auto;
+}
+.registration-section{
+width: 100%;
+}
+.registration-form-wrapper{
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+}
+.registraion-form{
+height: 300px;
+}
+
+.nav-bar-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 45px 0 34px;
+}
+.nav-logo-wrapper{
+    position: relative; 
+     padding-left: 80px;
+  }
+  
+
+.nav-title{
+display: inline-block;
+font-style: Inter;
+font-weight: 700;
+font-size: 25px;
+line-height: 2em;
+color: var(--main-color);
+}
+
+.nav-logo{
+    position: absolute;
+    background-image: url('./Assets/icon/icon.svg');
+    background-position: center;
+    width: 48px;
+    height: 46px;
+    left: 5px;
+
+}
+.nav-logo::after{
+    display:inline;
+    position: absolute;
+    content: "";
+    border-right: 4px solid var(--main-color);
+    width: 10px;
+    height: 46px;
+    right: -15px;
+    top: 0px;
+
+}
+.nav-item{
+    font-size: 24px;
+    padding-left: 45px ;
+   color: var(--main-color);
+}
+.form-card{
+    top:35px;
+    max-width: 325px;
+    min-width: 100px;
+    min-height: 100px;
+    height: 550px;
+    background-color: var(--main-color);
+    border-radius: 25px;
+ 
+}
+   select,input{
+       font-size: 18px;
+       line-height: 24px;
+       padding: 0px 20px;
+
+   }
+   .form-input{
+       width: 280px;
+       height: 48px;
+       border: 1px solid var(--border-color);
+       border-radius: 4px;
+   }
+   .form-label{
+       font-size: 20px;
+       font-style: normal;
+       font-weight: 400;
+       line-height: 23px;
+        padding-top: 15px;
+   }
+   .secondary-text {
+    color: var(--main-text-color);
+    font-size: 14px;
+color: rgba(255, 255, 255, 0.25);
+   }
+.footer {
+    position: fixed;
+    padding: 20px 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+.space-between {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.form-wrapper{
+    min-width: 50%;
+    padding: 28px;
+}
+.form-title{
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 35px;
+    text-align: left;
+    padding-bottom: 12px;
+    
+}
+.form-submit-button{
+    background-color: var(--botton-dimmed);
+    border-radius: 4px;
+    border: none;
+    color: var(--main-color);
+    padding: 9px 24px;
+    width: 280px;
+    height: 64px;
+    margin-top: 40px;
+    font-size: 25px;
+    font-style: normal;
+
+}
+
+.mobil-menu,
+.mobil-menu::before,
+.mobil-menu::after {
+    display: none;
+    background-color: var(--main-text-color);
+    height: 3px;
+    width: 24px;
+    margin-right: 10px;
+    transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    border-radius: 2px;
+}
+
+.mobil-menu::before {
+    content: '';
+    margin-top: -8px;
+}
+
+.mobil-menu::after {
+    content: '';
+    margin-top: 12px;
+}
+
+
+@media (max-width: 720px) {
+    .registration-form-image{
+        /*display:none;*/
+        position: absolute;
+        top: 22%;
+        left: 30%;
+    }
+
+    .form-card {
+        margin: 0 15px;
+        min-width: 345px;
+    }
+
+    .form-submit-button {
+        width: 280px;
+    }
+
+    .form-title {
+        font-size: 30px;
+        line-height: 36px;
+        min-width: 300px;
+    }
+    
+    .form-card {
+        z-index: 99;
+    }
+
+    .form-wrapper {
+        padding: 32px;
+    }
+
+    .nav-bar-wrapper {
+        padding: 20px 15px;
+    }
+
+    .nav-menu-item {
+        display: none;
+    }
+
+    .nav-logo-wrapper {
+        padding: 0;
+    }
+
+    .nav-logo {
+        left: 0;
+    }
+
+    .nav-title {
+        padding-left: 85px;
+    }
+    .mobil-menu,
+    .mobil-menu::before,
+    .mobil-menu::after {
+    display: block;
+    }
+
+    .registration-form-wrapper {
+        position: relative;
+    }
+
+    
+}
